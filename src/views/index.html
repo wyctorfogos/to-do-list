@@ -10,11 +10,11 @@
 <body>
     <div class="add-task">
         <h2>Write your daily task for today</h2>
-        <form>
-            <input id="task" title="task" type="text" placeholder="Your task" required>
+        <form id="task-form">
+            <input id="task" type="text" placeholder="Your task" required>
             <label for="task">Task:</label>
 
-            <input id="description" title="description" type="text" placeholder="Description">
+            <input id="description" type="text" placeholder="Description">
             <label for="description">Description:</label>
 
             <button type="submit" aria-label="Save task">Save task</button>
@@ -22,7 +22,7 @@
     </div>
     <div class="list-of-tasks">
         <h3>List of Tasks</h3>
-        <dl>
+        <dl id="task-list">
             <dt>Check your email inbox</dt>
             <dd>Review your inbox and respond to important emails that require immediate attention.</dd>
 
@@ -36,5 +36,8 @@
             <dd>Take care of any new tasks or responsibilities that may arise during the day.</dd>
         </dl>
     </div>
+
+    <!-- Importação do Script -->
+    <script src="../scripts/addTask.js"></script>
 </body>
 </html>
