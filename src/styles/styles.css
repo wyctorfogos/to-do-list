@@ -1,12 +1,27 @@
+body{
+    background-color:rgb(212, 195, 172);
+}
+
 .add-task{
     background-color:rgb(141, 224, 85);
     justify-content: center;
+    margin: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
     font-size: small;
     text-align: center;
+    border-radius: 20px;
     padding: 1%;
 }
 
 .list-of-tasks{
     background-color: antiquewhite;
+    justify-content: center;
+    margin: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: small;
     text-align: center;
+    border-radius: 20px;
+    padding: 1%;
 }
