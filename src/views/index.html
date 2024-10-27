@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>do list - A daily list to remember what I need to do</title>
     <link href="../styles/styles.css" rel="stylesheet">
@@ -10,19 +11,30 @@
     <div class="add-task">
         <h2>Write your daily task for today</h2>
         <form>
-            <input title="task" type="text" placeholder="Your task">
-            <input title="description" type="text" placeholder="description">
-            <button aria-label="Save task"> Save task</button>
+            <input id="task" title="task" type="text" placeholder="Your task" required>
+            <label for="task">Task:</label>
+
+            <input id="description" title="description" type="text" placeholder="Description">
+            <label for="description">Description:</label>
+
+            <button type="submit" aria-label="Save task">Save task</button>
         </form>
     </div>
     <div class="list-of-tasks">
-        <ul>
-            <li> Check your email list </li>
-            <li> Respond to any new email </li>
-            <li> Complete any other task </li>
-            <li> Prepare a cup of coffee</li>
-            <li> Any other possible tasks</li>
-        </ul>
+        <h3>List of Tasks</h3>
+        <dl>
+            <dt>Check your email inbox</dt>
+            <dd>Review your inbox and respond to important emails that require immediate attention.</dd>
+
+            <dt>Prepare a cup of coffee</dt>
+            <dd>Gather coffee grounds, heat water, and add sugar if desired. Enjoy your coffee break!</dd>
+
+            <dt>Complete other pending tasks</dt>
+            <dd>Review your task list and finish any other high-priority tasks.</dd>
+
+            <dt>Handle additional tasks as needed</dt>
+            <dd>Take care of any new tasks or responsibilities that may arise during the day.</dd>
+        </dl>
     </div>
 </body>
 </html>
