@@ -1,27 +1,104 @@
-body{
-    background-color:rgb(212, 195, 172);
+/* Estilo para o corpo da página */
+body {
+    background-color: rgb(212, 195, 172);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.add-task{
-    background-color:rgb(141, 224, 85);
-    justify-content: center;
-    margin: 10px;
-    margin-left: 20%;
-    margin-right: 20%;
-    font-size: small;
+/* Estilo para a seção de adicionar tarefas */
+.add-task {
+    background-color: rgb(141, 224, 85);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: 20px 0;
+    font-size: 16px;
     text-align: center;
-    border-radius: 20px;
-    padding: 1%;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.list-of-tasks{
+.add-task h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.add-task form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens horizontalmente */
+    width: 100%;
+}
+
+/* Centralizando o campo de texto */
+.add-task input[type="text"] {
+    margin: 8px 0;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 90%; /* Mantém a largura total do input */
+    max-width: 400px; /* Define uma largura máxima para telas maiores */
+}
+
+/* Centralizando o botão */
+.add-task button {
+    background-color: #228B22;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50%; /* Define uma largura menor para o botão */
+    max-width: 100px; /* Define uma largura máxima para telas maiores */
+    transition: background-color 0.3s;
+    margin: 8px 0;
+    text-align: center;
+}
+
+.add-task button:hover {
+    background-color: #196619;
+}
+
+/* Estilo para a lista de tarefas */
+.list-of-tasks {
     background-color: antiquewhite;
-    justify-content: center;
-    margin: 10px;
-    margin-left: 20%;
-    margin-right: 20%;
-    font-size: small;
+    width: 60%;
+    margin: 10px 0;
+    font-size: 16px;
     text-align: center;
-    border-radius: 20px;
-    padding: 1%;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.list-of-tasks h3 {
+    color: #333;
+    margin-top: 0;
+}
+
+.list-of-tasks dl {
+    text-align: left;
+    margin: 0;
+}
+
+.list-of-tasks dt {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.list-of-tasks dd {
+    margin: 5px 0 15px 20px;
+    color: #555;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .add-task, .list-of-tasks {
+        width: 90%;
+    }
 }
