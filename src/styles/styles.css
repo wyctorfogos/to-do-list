@@ -1,7 +1,9 @@
 .add-task{
-    background-color:darkgrey;
+    background-color:rgb(141, 224, 85);
     justify-content: center;
+    font-size: small;
     text-align: center;
+    padding: 1%;
 }
 
 .list-of-tasks{
