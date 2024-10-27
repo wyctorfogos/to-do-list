@@ -1,0 +1,10 @@
+.add-task{
+    background-color:darkgrey;
+    justify-content: center;
+    text-align: center;
+}
+
+.list-of-tasks{
+    background-color: antiquewhite;
+    text-align: center;
+}
